@@ -1,2 +1,3 @@
-# meet.js_10-2019
-Code examples from meet.js October 2019
+# The real power of the function #
+
+Code examples from meet.js 30th October 2019

@@ -1,0 +1,25 @@
+{
+  "name": "meet.js_10-2019",
+  "version": "1.0.0",
+  "description": "Code examples from meet.js 30th October 2019",
+  "main": "index.html",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krzysztof-grzybek/meet.js_10-2019.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krzysztof-grzybek/meet.js_10-2019/issues"
+  },
+  "homepage": "https://github.com/krzysztof-grzybek/meet.js_10-2019#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
