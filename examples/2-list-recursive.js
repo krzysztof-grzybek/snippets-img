@@ -16,7 +16,7 @@ function second(list) {
   });
 }
 
-const myList = list(1, 2);
+const myList = list(1, list(2, list(3, list(4, list(5, 6)))));
 const a = first(myList);
-const b = second(myList);
-console.log(a, b); // 1, 2
+const b = first(second(second(second(myList))));
+console.log(a, b); // 1, 4

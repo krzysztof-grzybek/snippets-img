@@ -21,5 +21,8 @@
   "homepage": "https://github.com/krzysztof-grzybek/meet.js_10-2019#readme",
   "devDependencies": {
     "http-server": "^0.11.1"
+  },
+  "dependencies": {
+    "monaco-editor": "^0.18.1"
   }
 }
