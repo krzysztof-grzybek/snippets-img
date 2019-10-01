@@ -21,7 +21,7 @@ class Menu {
     return `
       <li>
         <button data-menu-item="${item.path}" class="btn">
-          <span class="btn__label">${item.label}</span>
+          <span class="btn__label" data-menu-item__label>${item.label}</span>
           <br><span class="btn__path">${item.path}</span>
         </button>
       </li>
@@ -30,13 +30,14 @@ class Menu {
 
   addEventListeners() {
     this.rootEl.addEventListener('click', e => {
-      if (e.target.hasAttribute('data-menu-item')) {
-        const path = e.target.getAttribute('data-menu-item');
-        const label = e.target.innerHTML;
-        this.setItemsActiveState(e.target);
+      const clickedItem = e.target.closest('[data-menu-item]');
+      if (clickedItem) {
+        const path = clickedItem.getAttribute('data-menu-item');
+        const label = clickedItem.querySelector('[data-menu-item__label]').innerHTML;
+        this.setItemsActiveState(clickedItem);
         this.clickCallback({ path, label });
       }
-    })
+    });
   }
 
   onItemClick(callback) {

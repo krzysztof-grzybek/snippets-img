@@ -8,6 +8,12 @@ document.addEventListener('DOMContentLoaded', onDocReady);
 const SCRIPTS = [
   { path: './examples/1-list.js', label: 'Lists' },
   { path: './examples/2-list-recursive.js', label: 'List recursive' },
+  { path: './examples/3-task-solution-readable.js', label: 'Task solution - readable solution' },
+  { path: './examples/4-task-solution.js', label: 'Task solution' },
+  { path: './examples/5-task-solution-single-arg.js', label: 'Task solution - single argument' },
+  { path: './examples/6-if-else.js', label: 'If - else' },
+  { path: './examples/7-arithmetic.js', label: 'Arithmetic' },
+  { path: './examples/8-y-combinator.js', label: 'Y Combinator' },
 ];
 
 function onDocReady() {
