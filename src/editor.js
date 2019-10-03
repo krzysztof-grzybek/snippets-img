@@ -1,7 +1,7 @@
 class Editor {
   static create() {
     return new Promise(resolve => {
-      require.config({ paths: { 'vs': '../node_modules/monaco-editor/min/vs' }});
+      require.config({ paths: { 'vs': '../vendor/monaco-editor/min/vs' }});
       require(['vs/editor/editor.main'], function() {
         const rootEl = document.getElementById('monaco-editor');
         var monacoEditor = monaco.editor.create(rootEl, {
