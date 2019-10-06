@@ -23,15 +23,13 @@ const Y = f => (x => f(y => (x(x))(y)))(x => f(y => (x(x))(y)));
 const range = from => to => Y(f => from => from <= to ? list(from)(f(from + 1)) : null)(from);
 const foreach = l => g => Y(f => l => l !== null && (g(first(l)), f(second(l))))(l);
 const map = l => g => Y(f => l => l !== null ? list(g(first(l)))(f(second(l))) : l)(l);
-
-// TODO: transform reverse to Y
-const reverse = l => (parent = null) =>
+const reverse = l => Y(f => l => parent =>
   second(l) === null
     ? list(first(l))(parent)
-    : reverse(second(l))(list(first(l))(parent));
+    : f(second(l))(list(first(l))(parent)))(l)(null);
 
 let numbers = range(1)(10);
 numbers = map(numbers)(n => n * n);
-numbers = reverse(numbers)();
+numbers = reverse(numbers);
 foreach(numbers)(console.log);
 
