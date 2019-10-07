@@ -54,6 +54,6 @@ function reverse(list) {
 }
 
 let numbers = range(1, 10);
-numbers = map(numbers, function (n) { return n * n });
+numbers = map(numbers, n => n * n);
 numbers = reverse(numbers);
-foreach(numbers, (n) => console.log(`${n} \n`));
+foreach(numbers, n => console.log(n));

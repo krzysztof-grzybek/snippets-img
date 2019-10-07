@@ -1,4 +1,4 @@
-function list(a, b) {
+function createList(a, b) {
   return function(f) {
     return f(a, b);
   };
@@ -16,7 +16,7 @@ function second(list) {
   });
 }
 
-const myList = list(1, list(2, list(3, list(4, list(5, 6)))));
+const myList = createList(1, createList(2, createList(3, 4)));
 const a = first(myList);
 const b = first(second(second(second(myList))));
 console.log(a, b); // 1, 4
