@@ -18,5 +18,5 @@ function second(list) {
 
 const myList = createList(1, createList(2, createList(3, 4)));
 const a = first(myList);
-const b = first(second(second(second(myList))));
-console.log(a, b); // 1, 4
+const b = first(second(second(myList)));
+console.log(a, b); // 1, 3
