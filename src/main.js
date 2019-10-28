@@ -13,7 +13,7 @@ const SCRIPTS = [
   { path: './examples/5-task-solution-single-arg.js', label: 'Task solution - single argument' },
   { path: './examples/6-if-else.js', label: 'If - else' },
   { path: './examples/7-arithmetic.js', label: 'Arithmetic' },
-  { path: './examples/8-y-combinator.js', label: 'Y Combinator' },
+  { path: './examples/8-z-combinator.js', label: 'Z Combinator' },
   { path: './examples/9-task-solution-no-recursion.js', label: 'Task solution - no recursion' },
 ];
 
